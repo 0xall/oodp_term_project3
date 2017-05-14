@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@color/contactEditBackground"
+    tools:context="com.oodp.myaddressbook.contacts.ContactEditActivity">
+
+    <com.oodp.myaddressbook.view.CircularImageView
+        android:id="@+id/contact_edit_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:src="@mipmap/contact_no_image" />
+
+    <LinearLayout style="@style/contact_edit_view_group" >
+
+        <EditText
+            android:id="@+id/contact_edit_name"
+            style="@style/contact_edit_view"
+            android:hint="@string/contact_edit_name_hint"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/contact_edit_view_group">
+
+        <AutoCompleteTextView
+            android:id="@+id/contact_edit_group"
+            style="@style/contact_edit_view"
+            android:hint="@string/contact_edit_group_hint"
+            android:inputType="text"
+            android:completionThreshold="1" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/contact_edit_view_group">
+
+        <LinearLayout
+            style="@style/contact_edit_view"
+            android:id="@+id/contact_edit_phone_list"
+            android:paddingLeft="0dp"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/contact_edit_view_group" >
+
+        <EditText
+            android:id="@+id/contact_edit_home_address"
+            style="@style/contact_edit_view"
+            android:hint="@string/contact_edit_home_address_hint"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/contact_edit_office_address"
+            style="@style/contact_edit_view"
+            android:hint="@string/contact_edit_office_address_hint"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/contact_edit_view_group" >
+
+        <LinearLayout
+            android:id="@+id/contact_edit_birthday"
+            style="@style/contact_edit_view"
+            android:paddingLeft="0dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/contact_edit_birthday_text"
+                android:paddingLeft="@dimen/contact_edit_hint_left_padding"
+                android:hint="@string/contact_edit_birthday_hint"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/contact_edit_birthday_change_button"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_date_24dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/contact_edit_email"
+            style="@style/contact_edit_view"
+            android:hint="@string/contact_edit_email_hint"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/contact_edit_url"
+            style="@style/contact_edit_view"
+            android:hint="@string/contact_edit_url_hint"
+            android:inputType="textUri" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/contact_edit_view_group" >
+
+        <EditText
+            android:id="@+id/contact_edit_memo"
+            style="@style/contact_edit_view"
+            android:hint="@string/contact_edit_memo_hint"
+            android:inputType="textMultiLine"
+            android:lines="4" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MySearchView" parent="Widget.AppCompat.SearchView">
+        <item name="queryHint">sdf</item>
+    </style>
+
+    <style name="contact_edit_view_group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/contactEditForeground</item>
+        <item name="android:layout_margin">@dimen/contact_edit_viewgroup_margin</item>
+    </style>
+
+    <style name="contact_edit_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/contact_edit_view_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/contact_edit_view_margin_right</item>
+        <item name="android:layout_marginTop">@dimen/contact_edit_view_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/contact_edit_view_margin_bottom</item>
+        <item name="android:paddingLeft">@dimen/contact_edit_hint_left_padding</item>
+    </style>
+
+
+</resources>

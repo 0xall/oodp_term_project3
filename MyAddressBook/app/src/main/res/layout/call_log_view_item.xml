@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/call_log_item_padding_top"
+    android:paddingBottom="@dimen/call_log_item_padding_bottom"
+    android:paddingLeft="@dimen/call_log_item_padding_left"
+    android:paddingRight="@dimen/call_log_item_padding_right">
+
+    <ImageView
+        android:id="@+id/call_log_icon"
+        android:layout_width="@dimen/call_log_icon_size"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/call_log_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/call_log_view_margin_left"
+        android:gravity="center_vertical"  />
+
+    <TextView
+        android:id="@+id/call_log_received_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/call_log_view_margin_right"
+        android:gravity="center_vertical|right" />
+
+</LinearLayout>

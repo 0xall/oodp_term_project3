@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">My Address Book</string>
+    <string name="title_contacts_list">Contacts List</string>
+    <string name="title_add_contact">Add a Contact</string>
+    <string name="title_modify_contact">Modify the Contact</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="searchHint">Search</string>
+
+    <string name="menu_contactsList">contacts</string>
+    <string name="menu_dial">Dial</string>
+    <string name="menu_callLog">Call Logs</string>
+    <string name="menu_sms">SMS</string>
+
+    <string name="contact_edit_name_hint">Name</string>
+    <string name="contact_edit_number_hint">Number</string>
+    <string name="contact_edit_group_hint">Group</string>
+    <string name="contact_edit_home_address_hint">Home Address</string>
+    <string name="contact_edit_office_address_hint">Office Address</string>
+    <string name="contact_edit_email_hint">E-mail</string>
+    <string name="contact_edit_url_hint">URL</string>
+    <string name="contact_edit_memo_hint">Memo</string>
+    <string name="contact_edit_birthday_hint">Birthday</string>
+
+    <string name="menu_title_apply">Apply</string>
+    <string name="menu_title_delete">Delete</string>
+
+    <string name="alert_dialog_reask">Are you sure?</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+
+    <string name="alert_request_call_permission">You should allow permission for Call if you want to call.</string>
+    <string name="alert_request_call_log_permission">You should allow permission for Call if you want to see call logs.</string>
+
+    <string name="contact_action_call">Call</string>
+    <string name="contact_action_send_sms">Send SMS</string>
+    <string name="contact_action_send_email">Send E-mail</string>
+    <string name="contact_action_dialog_title">What do you want to do by this contact?</string>
+
+    <string name="contact_which_to_call_title">Which to call?</string>
+    <string name="contact_which_to_send_sms_title">Which to send SMS?</string>
+
+    <string name="call_log_item_time_day_passed">Day(s) Before</string>
+    <string name="call_log_item_time_hour_passed">Hour(s) Before</string>
+    <string name="call_log_item_time_minute_passed">Minute(s) Before</string>
+    <string name="call_log_item_time_passed_less_than_1min">Less than 1 Minute</string>
+    <string name="title_call_logs_list">Call Logs</string>
+    <string name="title_sms_list">SMS</string>
+
+</resources>
