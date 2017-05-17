@@ -47,5 +47,9 @@
     <string name="call_log_item_time_passed_less_than_1min">Less than 1 Minute</string>
     <string name="title_call_logs_list">Call Logs</string>
     <string name="title_sms_list">SMS</string>
+    <string name="alert_request_sms_permission">You should allow SMS permission.</string>
+    <string name="title_sms_chat">SMS Chatting</string>
+    <string name="sms_send">Send</string>
+    <string name="sms_send_failed_empty_text">Send failed. You should input some text to send.</string>
 
 </resources>

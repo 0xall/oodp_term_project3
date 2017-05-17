@@ -19,9 +19,8 @@ import com.oodp.myaddressbook.sms.SMSListFragment;
 public class MainActivity extends AppCompatActivity {
 
     public static final int FRAGMENT_INDEX_CONTACTS_LIST = 0;
-    public static final int FRAGMENT_INDEX_DIAL = 1;
-    public static final int FRAGMENT_INDEX_CALL_LOG = 2;
-    public static final int FRAGMENT_INDEX_SMS = 3;
+    public static final int FRAGMENT_INDEX_CALL_LOG = 1;
+    public static final int FRAGMENT_INDEX_SMS = 2;
 
     private int fragmentIndex;
     private TextView mTextMessage;
@@ -34,10 +33,6 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_contactsList:
                     displayFragment(MainActivity.FRAGMENT_INDEX_CONTACTS_LIST);
-                    return true;
-
-                case R.id.navigation_dial:
-                    displayFragment(MainActivity.FRAGMENT_INDEX_DIAL);
                     return true;
 
                 case R.id.navigation_callLog:

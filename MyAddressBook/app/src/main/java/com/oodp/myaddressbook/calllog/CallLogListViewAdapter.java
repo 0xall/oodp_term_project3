@@ -51,8 +51,8 @@ public class CallLogListViewAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        CallLogListItem item = (CallLogListItem)getItem(position);
 
+        CallLogListItem item = (CallLogListItem)getItem(position);
         convertView = inflater.inflate(R.layout.call_log_view_item, parent, false);
 
         // get views in the layout

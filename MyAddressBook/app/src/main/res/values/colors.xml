@@ -5,4 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="contactEditBackground">#cecece</color>
     <color name="contactEditForeground">#ffffff</color>
+
+    <color name="smsChatReceive">#ffde17</color>
+    <color name="smsChatSend">#27aae1</color>
 </resources>

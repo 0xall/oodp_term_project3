@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import com.oodp.myaddressbook.MainActivity;
 import com.oodp.myaddressbook.R;
+import com.oodp.myaddressbook.sms.SMSChatActivity;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -98,7 +99,7 @@ public class ContactsListFragment extends Fragment {
         contacts = contactsDBHelper.getSatisfiedContacts(search);
         String currentGroup = null;
 
-        adapter.addTitle("Bookmark", true);
+        //adapter.addTitle("Bookmark", true);
 
         for(Contact contact : contacts) {
             if(currentGroup == null || !contact.getGroup().equals(currentGroup)) {
@@ -259,7 +260,9 @@ public class ContactsListFragment extends Fragment {
 
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
+                Intent i = new Intent(getActivity(), SMSChatActivity.class);
+                i.putExtra(SMSChatActivity.EXTRA_PHONE_NUMBER, contact.getPhoneNumber(which).getPhoneNumberWithOnlyNumber());
+                startActivity(i);
             }
         }
     }

@@ -311,4 +311,27 @@ public class ContactsDBHelper extends SQLiteOpenHelper {
 
         return contacts;
     }
+
+    public String getNameByPhoneNumber(String phoneNumber) {
+
+        String[] searchColumn = {CONTACTS_COLUMN_PHONE_NUMBERS, CONTACTS_COLUMN_HOME_NUMBERS, CONTACTS_COLUMN_WORK_NUMBERS};
+
+        for(int i=0; i<searchColumn.length; ++i) {  // search in the phone number, home number, work numbers columns
+            ArrayList<Contact> contacts = getConditionContacts(searchColumn[i] + " LIKE " + "\'%" + phoneNumber + "%\'");
+            if(contacts.size() == 0) continue;
+
+            for(int j=0; j<contacts.size(); ++j) {  // search in the founded contacts
+
+                for(PhoneNumber number : contacts.get(j)) {     // search in a contact
+                    if(number.getPhoneNumberWithOnlyNumber().equals(phoneNumber)) {
+                        // if found, return the name of the contact
+                        return contacts.get(j).getName();
+                    }
+                }
+            }
+        }
+
+        // if not found, return null
+        return null;
+    }
 }
